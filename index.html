@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sadi-B10-Assignment-03</title>
+  <!-- Font awesome CDN -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- google fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+  <!-- tailwind CSS and daisyUI CDN -->
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- tailwind CSS configuration starts-->
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: 'rgb(171, 239, 95)',
+            secondary: 'rgba(171, 239, 95, 0.5)',
+            body: 'rgb(30, 30, 30)',
+            accent_heading: 'rgb(33, 33, 33)',
+            accent_light: 'rgb(73, 73, 73)',
+            description_light: 'rgb(115, 115, 115)',
+            card_heading: 'rgb(28, 28, 28)',
+            footer_font: 'rgb(233, 233, 233)',
+            bg_gray: 'rgb(30, 30, 30)',
+          },
+          fontFamily: {
+            Manrope: 'Manrope',
+          },
+          backgroundImage: {
+            first_gradient: '',
+          },
+        },
+      },
+    }
+  </script>
+
+  <!-- tailwind CSS configuration end -->
+</head>
+
+<body class="font-Manrope">
+<!-- header part starts -->
+  <header class="w-11/12 mx-auto bg-first_gradient my-12 bg-gradient-to-r from-white to-bg-slate-300">
+    <nav class="navbar border-4">
+      <!-- navbar start -->
+      <div class="navbar-start">
+        <div class="w-32 border-none flex items-center justify-center gap-1">
+          <a>
+            <div class="flex items-center justify-center bg-primary text-black size-7 rounded-2xl">
+              <i class="fa-solid fa-arrow-right -rotate-45">
+              </i>
+            </div>
+          </a>
+          <h4 class="text-accent_heading text-3xl font-extrabold">Rinterio</h4>
+        </div>
+      </div>
+      <!-- navbar center section -->
+      <div class="navbar-center hidden lg:flex font-normal tex-base">
+        <ul class="menu menu-horizontal px-1 font-normal text-base">
+          <li><a class="font-extrabold">Home</a></li>
+          <li><a>Services</a></li>
+          <li><a>Portfolio</a></li>
+          <li><a>Blogs</a></li>
+          <li><a>Contact Us</a></li>
+        </ul>
+      </div>
+      <!-- navbar end section -->
+      <div class="navbar-end">
+        <div class="hidden md:flex items-center justify-center gap-2">
+          <!-- search bar -->
+          <div class="bg-white size-12 rounded-3xl flex items-center justify-center border-2">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <!-- shopping cart -->
+          <div tabindex="0" role="button" class="btn bg-white w-12 rounded-3xl">
+            <div class="indicator">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+            </div>
+          </div>
+          <!-- Book consult button -->
+          <div class="flex w-56 border-none items-center justify-center gap-1 bg-primary py-5 rounded-full">
+            <h5 class="text-accent_heading text-xl font-extrabold">Book Consult</h5>
+            <a>
+              <div class="flex items-center justify-center bg-black text-white size-7 rounded-2xl">
+                <i class="fa-solid fa-arrow-right -rotate-45">
+                </i>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- drop-down -->
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <ul tabindex="0"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
+            <li><a class="font-extrabold">Home</a></li>
+            <li><a>Services</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>Blogs</a></li>
+            <li><a>Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+<!-- header part ends -->
+</body>
+
+</html>
