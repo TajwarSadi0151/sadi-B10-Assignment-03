@@ -31,6 +31,7 @@
           colors: {
             primary: 'rgb(171, 239, 95)',
             secondary: 'rgba(171, 239, 95, 0.5)',
+            tertiary: 'rgba(171, 239, 95, 0.2)',
             body: 'rgb(30, 30, 30)',
             accent_heading: 'rgb(33, 33, 33)',
             accent_light: 'rgb(73, 73, 73)',
@@ -38,12 +39,16 @@
             card_heading: 'rgb(28, 28, 28)',
             footer_font: 'rgb(233, 233, 233)',
             bg_gray: 'rgb(30, 30, 30)',
+            bg_red: 'rgb(231, 193, 211)',
+            bg_yellow: 'rgb(239, 218, 110)',
+            mint_green: 'rgb(164, 218, 195)',
+            bg_blue: 'rgb(119, 170, 234)',
           },
           fontFamily: {
             Manrope: 'Manrope',
           },
           backgroundImage: {
-            background_gradient: 'linear-gradient(0.00deg, rgb(255, 255, 255),rgba(255, 255, 255, 0) 100%)',
+            background_gradient: 'linear-gradient(0.00deg, rgb(255, 255, 255),rgba(255, 255, 255, 0) 100%',
           },
         },
       },
@@ -55,7 +60,7 @@
 
 <body class="font-Manrope">
   <!-- *header part starts -->
-  <header class="xl:container mx-auto my-12 bg-background_gradient border-2 border-red-500">
+  <header class="xl:container mx-auto my-12 bg-background_gradient">
     <nav class="navbar">
       <!-- navbar start -->
       <div class="navbar-start">
@@ -155,7 +160,8 @@
     <div class="hero-content flex-col lg:flex-row pt-24 gap-9 xl:container mx-auto px-0">
       <div class="relative">
         <!-- vector image -->
-        <div class="lg:border-2 lg:border-dotted lg:border-neutral-400 lg:w-32 lg:h-24 lg:flex lg:justify-center lg:items-center lg:absolute lg:top-[-5rem] lg:left-[-2rem]">
+        <div
+          class="lg:border-2 lg:border-dotted lg:border-neutral-400 lg:w-32 lg:h-24 lg:flex lg:justify-center lg:items-center lg:absolute lg:top-[-5rem] lg:left-[-2rem]">
           <img src="assets/Vector.png" alt="" class="hidden lg:block">
         </div>
         <!-- about us button -->
@@ -168,7 +174,8 @@
           </a>
           <h5 class="text-base font-bold">About Us</h5>
         </div>
-        <h1 class="text-2xl text-center md:text-4xl font-extrabold mb-6 text-accent_heading md:text-left">We design thoughtful, liveable spaces</h1>
+        <h1 class="text-2xl text-center md:text-4xl font-extrabold mb-6 text-accent_heading md:text-left">We design
+          thoughtful, liveable spaces</h1>
         <p class="mb-6 text-sm md:text-base font-medium text-accent_light text-center md:text-left">
           The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood,
           sleek metal accents.
@@ -199,6 +206,76 @@
       <img src="assets/Rectangle.png" class="max-w-xs md:max-w-xl rounded-2xl" />
     </div>
   </div>
+  <!-- Work process -->
+  <section class="bg-base-200">
+    <div class="xl:container mx-auto pt-24">
+      <div class="flex justify-center mb-4">
+        <div class="flex w-44 items-center justify-center bg-white px-4 py-2 rounded-full">
+          <a>
+            <div class="flex items-center justify-center bg-white text-black size-7 rounded-3xl">
+              <i class="fa-solid fa-arrow-right">
+              </i>
+            </div>
+          </a>
+          <h5 class="text-base font-bold text-accent_light">How we works</h5>
+        </div>
+      </div>
+      <div class="flex flex-col items-center">
+        <h1 class="text-2xl text-center md:text-4xl font-extrabold mb-6 text-accent_heading">Our Works Process</h1>
+        <p class="mb-8 text-sm md:text-base font-medium text-accent_light max-w-2xl text-center">
+          The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood,
+          sleek metal accents.
+        </p>
+      </div>
+      <!-- card -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="card bg-base-100 rounded-2xl bg-bg_red p-7">
+          <figure class="w-12">
+            <img src="assets/concept.png" alt="Shoes" />
+          </figure>
+          <div class="card-body p-0 mt-2">
+            <h2 class="card-title text-xl font-extrabold">Concept</h2>
+            <p class="mt-2 text-sm md:text-base font-medium text-accent_light">The barn house captivates with its blend
+              of
+              rustic charm and modern.</p>
+          </div>
+        </div>
+        <div class="card bg-base-100 rounded-2xl bg-bg_yellow p-7">
+          <figure class="w-12">
+            <img src="assets/flow-chart.png" alt="Shoes" />
+          </figure>
+          <div class="card-body p-0 mt-2">
+            <h2 class="card-title text-xl font-extrabold">Design Process</h2>
+            <p class="mt-2 text-sm md:text-base font-medium text-accent_light">The barn house captivates with its blend
+              of
+              rustic charm and modern.</p>
+          </div>
+        </div>
+        <div class="card bg-base-100 rounded-2xl bg-mint_green p-7">
+          <figure class="w-12">
+            <img src="assets/vision.png" alt="Shoes" />
+          </figure>
+          <div class="card-body p-0 mt-2">
+            <h2 class="card-title text-xl font-extrabold">Supervision</h2>
+            <p class="mt-2 text-sm md:text-base font-medium text-accent_light">The barn house captivates with its blend
+              of
+              rustic charm and modern.</p>
+          </div>
+        </div>
+        <div class="card bg-base-100 rounded-2xl bg-bg_blue p-7">
+          <figure class="w-12">
+            <img src="assets/budget-planning.png" alt="Shoes" />
+          </figure>
+          <div class="card-body p-0 mt-2">
+            <h2 class="card-title text-xl font-extrabold">Budget Planning</h2>
+            <p class="mt-2 text-sm md:text-base font-medium text-accent_light">The barn house captivates with its blend
+              of
+              rustic charm and modern.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 </body>
 
