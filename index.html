@@ -49,6 +49,7 @@
           },
           backgroundImage: {
             background_gradient: 'linear-gradient(0.00deg, rgb(255, 255, 255),rgba(255, 255, 255, 0) 100%',
+            "my-Image": "url(/assets/bg.jpg)",
           },
         },
       },
@@ -368,6 +369,79 @@
         </div>
         <!-- card -->
       </div>
+    </div>
+  </section>
+  <section class="bg-my-Image bg-cover py-24">
+    <div class="flex justify-center mb-4">
+      <div class="flex w-64 items-center justify-center bg-tertiary px-4 py-2 mb-4 rounded-full">
+        <a>
+          <div class="flex items-center justify-center text-accent_heading size-7 rounded-3xl">
+            <i class="fa-solid fa-arrow-right">
+            </i>
+          </div>
+        </a>
+        <h5 class="text-base font-bold accent_heading">Let’s Connect</h5>
+      </div>
+    </div>
+    <div class="flex flex-col items-center">
+      <h1 class="text-2xl text-center md:text-4xl font-extrabold mb-6 text-accent_heading">Let’s Discuss Next Project</h1>
+      <p class="mb-8 text-sm md:text-base font-medium text-accent_light max-w-2xl text-center">
+        The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
+      </p>
+    </div>
+    <div class="flex items-center justify-center h-full xl:container mx-auto">
+      <form>
+        <div class="mb-6 flex gap-6 flex-col md:flex-row">
+          <div class="flex-1">
+            <input
+              type="text"
+              placeholder="First Name*"
+              class="input input-accent w-[30rem] h-16 text-base font-medium border-1 border-solid border-footer_font text-zinc-400"
+            />
+          </div>
+          <div class="flex-1">
+            <input
+              type="text"
+              placeholder="Last Name*"
+              class="input input-accent w-[30rem] h-16 text-base font-medium border-1 border-solid border-footer_font text-zinc-400"
+            />
+          </div>
+        </div>
+        <div class="mb-4 flex gap-6 flex-col md:flex-row">
+          <div class="flex-1">
+            <input
+              type="tel"
+              id="phone"
+              placeholder="Phone NUmber*"
+              class="input input-accent w-[30rem] h-16 text-base font-medium border-1 border-solid border-footer_font text-zinc-400"
+            />
+          </div>
+          <div class="flex-1">
+            <input
+              type="email"
+              id="email"
+              placeholder="Email NUmber*"
+              class="input input-accent w-[30rem] h-16 text-base font-medium border-1 border-solid border-footer_font text-zinc-400"
+            />
+          </div>
+        </div>
+        <div class="flex lg:items-center justify-between my-6 flex-col">
+          <textarea
+          placeholder="Write you message here"
+          class="textarea after:textarea-lg lg:w-[61rem] h-60 rounded-3xl text-base font-medium border-1 border-solid border-footer_font text-zinc-400"></textarea>
+        </div>
+        <div class="flex items-center justify-center">
+          <div class="flex items-center justify-center gap-1 bg-primary py-5 rounded-full w-80">
+            <h5 class="text-accent_heading text-xl font-extrabold">Send Mail</h5>
+            <a>
+              <div class="flex items-center justify-center bg-black text-white size-7 rounded-2xl">
+                <i class="fa-solid fa-arrow-right -rotate-45">
+                </i>
+              </div>
+            </a>
+          </div>
+        </div>
+    </form>
     </div>
   </section>
 </body>
